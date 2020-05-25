@@ -1,0 +1,53 @@
+package orientacao;
+
+import java.util.Scanner;
+
+import entidade.Triangulo;
+
+public class ex_withOO {
+
+	public static void main(String[] args) {
+		// Exemplo de calculo de área de triangulo com OO
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Triangulo x, y;
+		x = new Triangulo(); //instanciar objetivo do tipo Triangulo
+		y = new Triangulo();
+		
+		System.out.println("Valores triangulo X");
+		System.out.print("Lado A: ");
+		x.a = sc.nextDouble();
+		System.out.print("Lado B: ");
+		x.b = sc.nextDouble();
+		System.out.print("Lado C: ");
+		x.c = sc.nextDouble();
+		
+		System.out.println("Valores triangulo Y");
+		System.out.print("Lado A: ");
+		y.a = sc.nextDouble();
+		System.out.print("Lado B: ");
+		y.b = sc.nextDouble();
+		System.out.print("Lado C: ");
+		y.c = sc.nextDouble();
+		
+		double p = (x.a + x.b + x.c) / 2;
+		double areaX = Math.sqrt(p * (p - x.a)*(p - x.b)*(p - x.c));
+		
+		p = (y.a + y.b + y.c) / 2;
+		double areaY = Math.sqrt(p * (p - y.a)*(p - y.b)*(p - y.c));
+
+		System.out.printf("Triangulo X: %.4f%n", areaX);
+		System.out.printf("Triangulo Y: %.4f%n", areaY);
+		
+		if (areaX > areaY){
+			System.out.println("Triangulo X tem a maior área");
+		}
+		else{
+			System.out.println("Triangulo Y tem a maior área");
+		}
+		
+		sc.close();
+	}
+
+}

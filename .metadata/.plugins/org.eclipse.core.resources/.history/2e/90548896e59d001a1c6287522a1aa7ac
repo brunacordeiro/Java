@@ -1,0 +1,55 @@
+package application;
+
+import java.util.Scanner;
+
+import account.AccountMovement;
+import account.AccountRegistration;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String nameNew;
+		
+		
+		System.out.print("Nome do titular da conta: ");
+		String name = sc.nextLine();
+		System.out.print("Número da conta: ");
+		int account = sc.nextInt();
+		
+		AccountRegistration reg = new AccountRegistration(name, account);
+		AccountMovement acMov = new AccountMovement();
+		
+		System.out.println("Deseja realizar deposito: 1 = sim ou 2 = não");
+		int auxDeposit = sc.nextInt();
+		acMov.Deposit(auxDeposit);
+		
+		System.out.println("\n" + reg + "\n" + acMov);
+		
+		System.out.println("1 - Alterar nome");
+		System.out.println("2 - Depositar");
+		System.out.println("3 - Saque");
+		System.out.println("\nInforme a opção desejada:");
+		int auxOp = sc.nextInt();
+		
+		switch (auxOp){
+			
+		case 1:
+			System.out.print("Informe o nome: ");
+			nameNew = sc.nextLine();
+			System.out.println(nameNew);
+			break;
+		case 2:
+			System.out.print("Deseja realizar deposito: 1 = sim ou 2 = não");
+			auxDeposit = sc.nextInt();
+			acMov.Deposit(auxDeposit);
+			System.out.println(reg + "\n" + acMov);
+		case 3: 
+			break;
+		}
+		
+		sc.close();
+	}
+
+}

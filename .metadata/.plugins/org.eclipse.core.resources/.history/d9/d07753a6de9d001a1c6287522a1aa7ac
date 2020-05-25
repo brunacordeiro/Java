@@ -1,0 +1,51 @@
+package account;
+
+public class AccountRegistration {
+	
+	private String name;
+	private double account;
+	private double deposit;  	//Optional
+	private double rate = 5; 	//bank withdrawal fee
+	
+	//Class Builder
+	public AccountRegistration(String name, double account) {
+		super();
+		this.name = name;
+		this.account = account;
+	}
+
+	//Get and Set Methods
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getAccount() {
+		return account;
+	}
+
+	public void setAccount(double account) {
+		this.account = account;
+	}
+
+	public double getDeposit() {
+		return deposit;
+	}
+
+	public void setDeposit(double deposit) {
+		this.deposit = deposit;
+	}
+
+	@Override
+	public String toString() {
+		return "AccountRegistration [name=" + name + ", account=" + account + ", deposit=" + deposit + ", rate=" + rate
+				+ "]";
+	}
+	
+	
+	
+	
+}

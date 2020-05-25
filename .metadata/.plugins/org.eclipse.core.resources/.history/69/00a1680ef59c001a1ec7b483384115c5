@@ -1,0 +1,10 @@
+package entidade;
+
+public class Triangulo {
+	//a classe triangulo tem 3 atributos
+	//são publicos pois posso acessar de outro pacote
+	
+	public double a;
+	public double b;
+	public double c;
+}

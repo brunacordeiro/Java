@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in); //associação do objeto Scanner ao teclado do tipo console
+		String x, y;
+		x = sc.next(); //String
+		y = sc.nextInt();
+		
+		System.out.println("Ola mundo:" + x, + y);
+		
+		
+		sc.close();
+	}
+
+}

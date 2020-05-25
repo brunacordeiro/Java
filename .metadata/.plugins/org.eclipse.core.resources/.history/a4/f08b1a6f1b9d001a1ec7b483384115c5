@@ -1,0 +1,9 @@
+package calculator;
+
+public class CurrencyConverter {
+	
+	public static double Calculator(double dolar, double reais){
+		double iof = 0.6;
+		return (dolar * reais) + (dolar * reais * iof);
+	}
+}

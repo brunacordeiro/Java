@@ -1,0 +1,21 @@
+package application;
+
+import java.util.Scanner;
+
+import product.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe a quantidade de produtos: ");
+		int n = sc.nextInt();
+		
+		//declaração do vetor do tipo da classe Product
+		Product[] vect = new Product[n];
+	}
+
+}

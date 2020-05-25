@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in); //associação do objeto Scanner ao teclado do tipo console
+		//String x;
+		//int y;
+		char z;
+		
+		//x = sc.next(); 				//String
+		//x = sc.nextLine();		//usado para ler a linha até que haja um enter
+		//y = sc.nextInt();			//Int
+		z = sc.next().charAt(0);	//Char
+		
+		System.out.println("Ola mundo:" + z);
+		
+		sc.close();
+	}
+
+}

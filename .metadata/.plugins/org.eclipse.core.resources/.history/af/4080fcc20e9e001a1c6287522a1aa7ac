@@ -1,0 +1,47 @@
+package workers;
+
+public class EmployeeRegistration {
+	
+	private int id;
+	private String name;
+	private double salario;
+	
+	public EmployeeRegistration(int id, String name, double salario) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salario = salario;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public double AumentoSalario(double percent){
+		return salario + salario * (percent / 100);
+	}
+	
+	public String toString(){
+		return "\nFuncionários cadastrados: "
+				+ "\nId: " + id 
+				+ "\nNome: " + name 
+				+ " Salário: " + salario;
+	}
+	
+}

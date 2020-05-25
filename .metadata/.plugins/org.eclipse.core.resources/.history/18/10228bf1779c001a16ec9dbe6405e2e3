@@ -1,0 +1,43 @@
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
+/*
+		 * toLowerCase() - transformar para minusculo
+		 * toUpperCase() - transformar para maiusculo
+		 * trim() - remover espaços
+		 * 
+		 * substring(inicio) - recortar uma string
+		 * substring(inicio, fim) - recortar inicio e fim
+		 * 
+		 * replace(char, char) or (string, string) - substituir
+		 * 
+		 * IndexOf - informa a posição da primeira ocorrencia de um valor na string
+		 * LastIndexOf - informa a posição da ultima ocorrencia de um string
+		 * 
+		 * str.Split(" ") - recortar a string com base em um operador
+		 * *
+		 */
+
+
+
+public class funcoesString {
+
+	public static void main(String[] args) {
+	
+		String original = " abcd EFGH ijKL MNop  ";
+		
+		System.out.println("Munuscula: " + '-' + original.toLowerCase() + '-');
+		System.out.println("Maiúscula: " + '-' + original.toUpperCase() + '-');
+		
+		System.out.println("Removendo espaços inicio e fim: " + '-' + original.trim() + '-');
+		
+		System.out.println("Substring(3): "  + '-' +  original.substring(3) + '-');
+		System.out.println("Substring(3,9): "  + '-' +  original.substring(3,9) + '-');
+		
+		System.out.println("Replace (char)" + '-' + original.replace('a', '3') + '-');
+		System.out.println("Replace (string)" + '-' + original.replace("abc", "321") + '-');
+		
+		System.out.println("IndexOf 'bc': " + original.indexOf("b"));
+
+	}
+
+}

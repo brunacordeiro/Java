@@ -1,0 +1,41 @@
+package application;
+
+import java.util.Scanner;
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		Product product = new Product();
+		
+		System.out.println("Entre com os dados do produto");
+		System.out.print("Name: ");
+		product.name = sc.nextLine();
+		System.out.print("Price: ");
+		product.price = sc.nextDouble();
+		System.out.print("Quantitiy: ");
+		product.quantity = sc.nextInt();
+		
+		System.out.println();
+		System.out.println(product.toString());
+		
+		System.out.println();
+		System.out.println("Adicionar unidades: ");
+		int quantity = sc.nextInt();
+		product.addProducts(quantity);
+		System.out.println("Update: " + product);
+		
+		System.out.println();
+		System.out.println("Remover unidades: ");
+		quantity = sc.nextInt();
+		product.removeProducts(quantity);
+		System.out.println("Update: " + product);
+		
+		
+		
+		sc.close();	
+	}
+
+}

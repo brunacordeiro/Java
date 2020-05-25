@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Scanner;
+
+import account.AccountRegistration;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.print("Nome do titular da conta: ");
+		String name = sc.nextLine();
+		System.out.print("Número da conta: ");
+		int account = sc.nextInt();
+		
+		AccountRegistration reg = new AccountRegistration(name, account);
+		
+		System.out.println("\nDados: " + reg);
+		
+		System.out.println("Informe a opção desejada:");
+		System.out.println("1 - Alterar nome");
+		System.out.println("2 - Alterar");
+		
+		sc.close();
+	}
+
+}

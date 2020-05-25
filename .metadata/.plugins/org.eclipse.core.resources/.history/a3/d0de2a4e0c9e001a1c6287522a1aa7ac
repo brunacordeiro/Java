@@ -1,0 +1,39 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import workers.EmployeeRegistration;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> list = new ArrayList<>();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe a quantidade de funcionários: ");
+		int n = sc.nextInt();
+		EmployeeRegistration[] funcList = new EmployeeRegistration[n];
+		
+		for (int i = 0; i < n; i++){
+			sc.nextLine();
+			
+			System.out.print("Id: ");
+			int id = sc.nextInt();
+			sc.nextLine();
+			System.out.print("Nome: ");
+			String name = sc.nextLine();
+			
+			System.out.print("Salário: ");
+			double salario = sc.nextDouble();
+			
+			funcList[i] = new EmployeeRegistration(id, name, salario);	
+		}
+		
+		System.out.println(funcList);
+		sc.close();
+	}
+
+}

@@ -1,0 +1,11 @@
+package workers;
+
+public class EmployeeRegistration {
+	
+	private int id;
+	private String name;
+	private double salario;
+	
+	
+	
+}

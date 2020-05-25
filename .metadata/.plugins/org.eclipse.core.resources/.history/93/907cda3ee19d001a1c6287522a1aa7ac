@@ -1,0 +1,44 @@
+package account;
+
+import java.util.Scanner;
+
+public class AccountMovement {
+	
+	Scanner sc = new Scanner (System.in);
+	double valueDeposit = 0;
+	
+	private double deposit;  	//Optional
+	private double rate = 5; 	//bank withdrawal fee
+	
+	public AccountMovement(double deposit, double rate) {
+		super();
+		this.deposit = deposit;
+		this.rate = rate;
+	}
+
+	public double getDeposit() {
+		return deposit;
+	}
+	
+	/*  - Alteração somente por deposito ou saque
+	public void setDeposit(double deposit) {
+		this.deposit = deposit;
+	}
+	*/
+
+	public double Deposit(){
+		
+		Scanner sc = new Scanner (System.in); double valueDeposit = 0;
+		
+		System.out.println("Deseja realizar deposito: 1 = sim ou 2 = não");
+		int auxDeposit = sc.nextInt();
+		
+		if (auxDeposit == 1){
+			System.out.print("Informe o valor a ser depositado: ");
+			valueDeposit = sc.nextDouble();
+		}else{
+			System.out.println("Nenhum valor será depositado no momento");
+		}
+	}
+	
+}

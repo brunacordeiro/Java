@@ -1,0 +1,10 @@
+package start_java;
+
+public class condicao_ternario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

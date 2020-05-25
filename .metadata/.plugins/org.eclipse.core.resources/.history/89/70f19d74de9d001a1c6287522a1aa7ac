@@ -1,0 +1,35 @@
+package application;
+
+import java.util.Scanner;
+
+import account.AccountRegistration;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		double valueDeposit = 0;
+		
+		
+		System.out.print("Nome do titular da conta: ");
+		String name = sc.nextLine();
+		System.out.print("Número da conta: ");
+		double account = sc.nextDouble();
+		
+		AccountRegistration reg = new AccountRegistration(name, account);
+		
+		System.out.println("Deseja realizar deposito: 1 = sim ou 2 = não");
+		int auxDeposit = sc.nextInt();
+		
+		if (auxDeposit == 1){
+			System.out.print("Informe o valor a ser depositado: ");
+			valueDeposit = sc.nextDouble();
+		}else{
+			System.out.println("Nenhum valor será depositado no momento");
+		}
+	
+		sc.close();
+	}
+
+}

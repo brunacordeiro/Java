@@ -1,0 +1,35 @@
+/*
+		 * toLowerCase() - transformar para minusculo
+		 * toUpperCase() - transformar para maiusculo
+		 * trim() - remover espaços
+		 * 
+		 * substring(inicio) - recortar uma string
+		 * substring(inicio, fim) - recortar inicio e fim
+		 * 
+		 * replace(char, char) or (string, string) - substituir
+		 * 
+		 * IndexOf - buscar algo na string inicio
+		 * LastIndexOf - buscar algo na string final
+		 * 
+		 * str.Split(" ") - recortar a string com base em um operador
+		 * *
+		 */
+
+
+
+public class funcoesString {
+
+	public static void main(String[] args) {
+	
+		String original = " abcd EFGH ijKL MNop  ";
+		
+		System.out.println("Munuscula: " + '-' + original.toLowerCase() + '-');
+		System.out.println("Maiúscula: " + '-' + original.toUpperCase() + '-');
+		System.out.println("");
+		System.out.println("Removendo espaços inicio e final: " + '-' + original.trim() + '-');
+		System.out.println("");
+		
+
+	}
+
+}

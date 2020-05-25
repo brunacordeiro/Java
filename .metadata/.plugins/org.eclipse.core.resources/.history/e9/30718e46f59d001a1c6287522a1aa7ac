@@ -1,0 +1,43 @@
+package application;
+
+import java.util.Scanner;
+
+import product.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		double soma;
+		
+		System.out.println("Informe a quantidade de produtos: ");
+		int n = sc.nextInt();
+		sc.nextLine(); //para consumir a linha do nextInt()
+
+		//declaração do vetor do tipo da classe Product
+		Product[] vect = new Product[n];
+		
+		//instanciar os produtos
+		for (int i = 0; i < n; i ++){
+			System.out.print("Informe o nome do produto: ");
+			String name = sc.nextLine();
+			System.out.print("Informe o preço: ");
+			double price = sc.nextDouble();
+			
+			//instanciar os produtos
+			vect[i] = new Product(name, price);
+			
+			//média dos preços
+			soma += vect[i].getPrice();
+		}
+		
+		double media = soma / n;
+		
+		System.out.printf("Media de preço: %.2f%n", media);
+		
+		sc.close();
+	}
+
+}

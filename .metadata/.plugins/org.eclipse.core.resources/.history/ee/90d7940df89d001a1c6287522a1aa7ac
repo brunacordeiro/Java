@@ -1,0 +1,26 @@
+package application;
+
+import java.util.Scanner;
+
+import room.Registration;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		Registration[] reg = new Registration[10];
+		
+		System.out.println("Quantidade de estudantes: ");
+		int n = sc.nextInt();
+		
+		//registro do aluguel para n estudantes
+		
+		for (int i = 0; i < n; i++){
+			System.out.println("Nome: ");
+			reg.
+		}
+	}
+
+}

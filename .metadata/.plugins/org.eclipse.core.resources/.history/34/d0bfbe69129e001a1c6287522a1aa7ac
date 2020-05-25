@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class matriz {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("tamanho da matriz");
+		int n = sc.nextInt();
+		
+		//instancia da matriz
+		int [][] mat = new int [n][n];
+		
+		for(int i = 0; i < n; i ++){
+			for (int j = 0; j < n; j++){
+				System.out.print("Elemento " + i + "," + j + ": ");
+				mat[i][j] = sc.nextInt();
+			}
+		}
+		
+		//diagonal principal
+		System.out.println("Diagonal principal");
+		for(int i = 0; i < n; i ++){
+			System.out.println(mat[i][i] + " ");
+		}
+	
+		sc.close();
+	}
+}

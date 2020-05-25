@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class condicao_ternaria {
+
+	public static void main(String[] args) {
+		// Simplificação da condição if
+		
+		double preco = 35;
+		double desconto;
+		
+		
+		//Exemplo if
+		if(preco < 20){
+			desconto = preco*0.1;
+		}
+		else {
+			desconto = preco*0.2;
+		}
+		System.out.println("Valor do desconto: " + desconto);
+	
+		//////////////////////////////////////////
+		
+		//Exemplo Condição Ternária
+		
+		double desconto2 = (preco < 20) ? preco*0.1 : preco*0.2;
+		System.out.println("Valor do desconto 2: " + desconto2);
+	}
+
+}
