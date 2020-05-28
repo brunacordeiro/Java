@@ -1,0 +1,19 @@
+package entities;
+
+public class Employee {
+	
+	private String name;
+	private int hours;
+	private double valuePerHour;
+	
+	
+	public Employee(String name, int hours, double valuePerHour) {
+		super();
+		this.name = name;
+		this.hours = hours;
+		this.valuePerHour = valuePerHour;
+	}
+	
+	
+	
+}

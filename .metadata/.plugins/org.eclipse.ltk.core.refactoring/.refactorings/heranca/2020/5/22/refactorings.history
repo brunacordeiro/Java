@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;heranca&apos;&#x0D;&#x0A;- Original project: &apos;heranca&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     heranca/src/account&#x0D;&#x0A;     account.AccountMovement.java&#x0D;&#x0A;     account.AccountRegistration.java&#x0D;&#x0A;     heranca/src/application" description="Delete elements" element1="/src&lt;application" element2="/src&lt;account" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1590499943380" subPackages="false" version="1.0"/>
+</session>
